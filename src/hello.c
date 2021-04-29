@@ -1,10 +1,6 @@
-        #include <stdio.h>
-        #include <stdlib.h>
+#include "module.h"
 
-        extern const char text[];       /* In text.s */
-
-        int main (void)
-        {
-            printf ("%s\n", text);
-            return EXIT_SUCCESS;
-        }
+int main (void)
+{
+    return print_it();
+}
